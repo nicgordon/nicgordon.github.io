@@ -264,7 +264,7 @@ window.onload = function () {
   }
 
   var storageKeys = Object.keys(localStorage);
-  for (var i = 0, len = storageKeys; i < len; i++) {
+  for (var i = 0, len = storageKeys.length; i < len; i++) {
     var value = localStorage.getItem(storageKeys[i]);
     document.getElementById(storageKeys[i]).value = value;
   }
